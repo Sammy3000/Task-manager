@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './App.css';
 
 const App = () => {
   return (
-    <>
-    <div>App</div>
-    <div>My main component</div>
-    </>
+    <div className='App'>
+    <header>
+        My task manager
+    </header>
+    </div>
   )
 }
 
