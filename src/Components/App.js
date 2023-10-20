@@ -4,13 +4,14 @@ import Form from './Form';
 import TodoList from './TodoList';
 
 const App = () => {
-    const [inputText,setInputText]=useState('');
+    const [inputText, setInputText] = useState('');
+    const [todos, setTodos]= useState([])
   return (
     <div className='App'>
     <header>
-        My task manager
+       <h1>My task manager{inputText}</h1>
     </header>
-    <Form/>
+    <Form setInputText={setInputText}/>
     <TodoList/>
     </div>
   )
