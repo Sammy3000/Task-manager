@@ -9,10 +9,10 @@ const App = () => {
   return (
     <div className='App'>
     <header>
-       <h1>My task manager{inputText}</h1>
+       <h1>My task manager</h1>
     </header>
     <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText}/>
-    <TodoList/>
+    <TodoList todos={todos} />
     </div>
   )
 }
