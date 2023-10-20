@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Form from './Form';
+import TodoList from './TodoList';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         My task manager
     </header>
     <Form/>
+    <TodoList/>
     </div>
   )
 }
