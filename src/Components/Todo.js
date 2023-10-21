@@ -3,7 +3,8 @@ import React from 'react'
 const Todo = ({text,todo,todos,setTodos}) => {
   
   const deleteHandler=()=>{
-
+      setTodos(todos.filter((res)=>res.id!==todo.id))
+      
   }
 
   return (
@@ -12,7 +13,7 @@ const Todo = ({text,todo,todos,setTodos}) => {
         <button className='complete-btn'>
             <i className='fas fa-check'></i>
         </button>
-        <button className='trash-btn'>
+        <button onClick={deleteHandler} className='trash-btn'>
             <i className='fas fa-trash'></i>
         </button>
 
