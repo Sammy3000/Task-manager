@@ -6,6 +6,9 @@ const Todo = ({text,todo,todos,setTodos}) => {
       setTodos(todos.filter((res)=>res.id!==todo.id))
       
   }
+  const completeHandler=()=>{
+    
+  }
 
   return (
     <div className='todo'>
