@@ -7,7 +7,14 @@ const Todo = ({text,todo,todos,setTodos}) => {
       
   }
   const completeHandler=()=>{
-    
+    setTodos(todos.map(item=>{
+      if(item.id===todo.id){
+        return {
+          ...item,Completed: !item.Completed
+        }
+      }
+      return item;
+    }))
   }
 
   return (
