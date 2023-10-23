@@ -12,7 +12,7 @@ const App = () => {
     <header>
        <h1>My task manager</h1>
     </header>
-    <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText}/>
+    <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText} setStatus={setStatus}/>
     <TodoList todos={todos} setTodos={setTodos} />
     </div>
   )
