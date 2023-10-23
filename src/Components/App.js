@@ -19,12 +19,9 @@ const App = () => {
           break;
           default:
             setFilteredTodos(todos)
-
-        
-
-         
-
-      }
+            break;
+          
+          }
     }
 
   return (
