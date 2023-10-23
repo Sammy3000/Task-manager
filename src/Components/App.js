@@ -9,6 +9,11 @@ const App = () => {
     const [status, setStatus] =useState('all');
     const [filteredTodos, setFilteredTodos] =useState([]);
 
+//USEEFFECT - Runs a function everytime a piece of state changes.
+useEffect(()=>{
+  filterHandler();
+}, [todos,status])
+
     const filterHandler=()=>{
       switch(status){
         case'completed':
