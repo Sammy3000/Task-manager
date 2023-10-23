@@ -19,8 +19,8 @@ const Todo = ({text,todo,todos,setTodos}) => {
 
   return (
     <div className='todo'>
-        <li onClick={completeHandler} className='todo-item'>{text}</li>
-        <button className='complete-btn'>
+        <li  className='todo-item'>{text}</li>
+        <button onClick={completeHandler} className='complete-btn'>
             <i className='fas fa-check'></i>
         </button>
         <button onClick={deleteHandler} className='trash-btn'>
