@@ -15,11 +15,12 @@ const Todo = ({text,todo,todos,setTodos}) => {
       }
       return item;
     }))
+
   }
 
   return (
     <div className='todo'>
-        <li  className='todo-item'>{text}</li>
+        <li  className={`${todo.Completed ? 'completed':'todo-item'}`}>{text}</li>
         <button onClick={completeHandler} className='complete-btn'>
             <i className='fas fa-check'></i>
         </button>
