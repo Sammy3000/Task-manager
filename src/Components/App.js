@@ -12,19 +12,19 @@ const App = () => {
 //USEEFFECT - Runs a function everytime a piece of state changes.
 useEffect(()=>{
   filterHandler();
-}, [todos,status])
+}, [todos, status])
 
     const filterHandler=()=>{
       switch(status){
-        case'completed':
-        setFilteredTodos(todos.filter(todo=>todo.completed===true))
+        case "completed":
+        setFilteredTodos(todos.filter(todo=>todo.Completed === true))
         break;
-        case 'uncompleted':
-          setFilteredTodos(todos.filter(todo=>todo.completed===false))
-          break;
-          default:
+        case "uncompleted":
+          setFilteredTodos(todos.filter(todo=>todo.Completed === false))
+        break;
+        default:
             setFilteredTodos(todos)
-            break;
+        break;
           
           }
     }
