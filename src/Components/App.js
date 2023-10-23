@@ -17,7 +17,8 @@ const App = () => {
         case 'uncompleted':
           setFilteredTodos(todos.filter(todo=>todo.completed===false))
           break;
-         
+          default:
+            setFilteredTodos(todos)
 
         
 
